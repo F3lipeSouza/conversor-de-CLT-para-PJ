@@ -17,20 +17,25 @@ export function Corpo(){
         setGanhoAnual(salarioAnual + ferias)
     }
     
+    const dinheiroFormatado =(x)=> new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(x)
     
+    addEventListener('submit', (e)=>{
+        e.preventDefault()
+        calculaSalario()
+    })
     return(
     <DivPrincipal>
         <EntraDados>
             <h2>Digite seu salário <Obrigatorio>*</Obrigatorio></h2>
             <Input type="number" onChange={e=>setSalario(Number(e.target.value))}/>
             <br/>
-            <BotaoCalcular onClick={calculaSalario}>calcular</BotaoCalcular>
+            <BotaoCalcular>calcular</BotaoCalcular>
         </EntraDados>
         <EntraDados>
             <h2>seu salário deve ser em média:<br/><br/>
-            por mês: {ganhoAnual ? ganhoAnual / 12 : null }
+            por mês: {ganhoAnual ? dinheiroFormatado(ganhoAnual / 12) : null }
             <br/>
-            por hora: {ganhoAnual ? ((ganhoAnual / 12) / 22) / 10: null }           
+            por hora: {ganhoAnual ? dinheiroFormatado(((ganhoAnual / 12) / 22) / 10): null }           
             </h2>
         </EntraDados>
     </DivPrincipal>
