@@ -1,7 +1,7 @@
 {
   "name": "conversor-clt-pj",
   "version": "0.1.0",
-  "homepage": "https://github.com/F3lipeSouza/conversor-de-CLT-para-PJ",
+  "homepage": "https://f3lipesouza.github.io/conversor-de-CLT-para-PJ/",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
