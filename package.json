@@ -1,8 +1,11 @@
 {
   "name": "conversor-clt-pj",
   "version": "0.1.0",
+  "homepage": "https://github.com/F3lipeSouza/conversor-de-CLT-para-PJ",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.1.4"
+    "eslint-config-next": "15.1.4",
+    "gh-pages": "^6.3.0"
   }
 }
