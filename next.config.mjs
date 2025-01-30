@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    basePath: "/conversor-de-CLT-para-PJ",
     output:"export",
-    basePath:"/conversor-de-CLT-para-PJ",
-    trailingSlash: true,
+    reactStrictMode: true
 };
 
 export default nextConfig;
