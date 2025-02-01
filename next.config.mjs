@@ -7,8 +7,7 @@ const nextConfig = {
     images: {
         unoptimized: true
     },
-    basePath: process.env.NODE_ENV === 'production' ? '/conversor-de-CLT-para-PJ' : '',
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/conversor-de-CLT-para-PJ' : ''
-}
+    basePath: "/conversor-de-CLT-para-PJ", 
+    assetPrefix: "/conversor-de-CLT-para-PJ"}
 
 export default nextConfig;
